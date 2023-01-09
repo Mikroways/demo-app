@@ -3,6 +3,16 @@ entries:
   demo-app:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2023-01-09T17:27:39.29928117Z"
+    description: A Helm chart for Kubernetes
+    digest: 9d8bce73838b567b2e4348de9a58835151376460a52d6d872bf4cca48a7b5f0d
+    name: demo-app
+    type: application
+    urls:
+    - https://github.com/Mikroways/demo-app/releases/download/demo-app-0.1.2/demo-app-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2023-01-09T16:27:41.475404433Z"
     description: A Helm chart for Kubernetes
     digest: 4eb89b597f5c8f4f4c4e40b311a70d382fdf3b6a84c51b3f25195b7cb0ad3420
@@ -21,4 +31,4 @@ entries:
     urls:
     - https://github.com/Mikroways/demo-app/releases/download/demo-app-0.1.0/demo-app-0.1.0.tgz
     version: 0.1.0
-generated: "2023-01-09T16:27:41.475416833Z"
+generated: "2023-01-09T17:27:39.29929927Z"
