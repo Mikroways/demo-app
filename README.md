@@ -9,7 +9,7 @@ application responds to its configuration when working with containers.
 In this case, application will use its defaults:
 
 ```
-docker run --rm -it -p4567:4567 gcr.io/mikroways/demo-app
+docker run --rm -it -p4567:4567 ghcr.io/mikroways/demo-app:latest
 ```
 
 Now, you can check exposed services with:
@@ -20,12 +20,12 @@ curl 'http://localhost:4567/env'
 curl 'http://localhost:4567/request'
 ```
 > In any case, the use of `jq` can be useful to format output, for example:
-> `curl 'http://localhost:4567/env | jq .'`
+> `curl -s 'http://localhost:4567/env -s' | jq .`
 
 In this case, message is overriden with environment variable:
 
 ```
-docker run --rm -it -e message="Hola mundo" -p4567:4567 gcr.io/mikroways/demo-app
+docker run --rm -it -e message="Hola mundo" -p4567:4567 ghcr.io/mikroways/demo-app:latest
 ```
 
 ## Development
